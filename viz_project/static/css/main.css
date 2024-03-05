@@ -1,0 +1,233 @@
+
+body {
+  overflow: hidden;
+}
+.myChart_size {
+  width: 900px;
+  height: 400px; 
+}
+.myChart_size2{
+   display:block;
+   box-sizing: border-box;
+   height:440;
+   width:880
+}
+.myChart_size3{
+  display:block;
+  box-sizing: border-box;
+  height:400px;
+  width: 400px;
+}
+#myChart4, #myChart5{
+  transform: translate(30px,-40PX);
+  
+}
+#myChart6{
+  height:300;
+  width:700;
+}
+#dateRange6,#dateRange7{
+  width:60%;
+}
+#h6,#h6{
+  transform: translateY(-4px);
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 130px;
+  /* background-color: #897c7c;
+  border-width: 2px; */
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  height:44px;
+}
+input[type="range"] {
+  width: 40%;
+  /* margin: 5px 0; */
+}
+
+#dashboard {
+  background-color: rgb(0, 99, 237);
+  color: white;
+}
+
+
+
+
+.filter-tabs {
+  margin-left: 130px;
+  display: flex;
+  /* justify-content:space-around; */
+  padding: 3px;
+  background-color: #ddd; 
+  overflow-x: scroll;
+}
+
+
+.top_of_chart{
+  /* margin-left: 0px; */
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  padding-bottom: 5px;
+  overflow: hidden;
+  align-items: baseline;
+}
+#dateRange4,#dateRange5{
+  transform: translateX(-20px);
+}
+
+#pestle_block,#quantity_block{
+  margin-left: 130px;
+  padding: 1px 16px;
+  height:90vh;
+  border-color: black;
+  border-width: 5px;
+  background-color: rgb(239, 239, 239);
+  overflow: auto;
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  justify-items: stretch;
+  overflow-x: visible;
+  padding-bottom: 20vh;
+}
+#quantity_block{
+  margin-left: 130px;
+  padding: 1px 16px;
+  height: 90vh;
+  border-color: black;
+  border-width: 5px;
+  background-color: rgb(239, 239, 239);
+  overflow: auto;
+  display: flex; 
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  justify-items: stretch;
+  overflow-x: visible;
+  display:none;
+  padding-bottom: 5vh;
+}
+  .inner_content{
+    padding: 20px;
+    position:relative;
+    background-color: #f1f1f1;
+    justify-content: center;
+    height:fit-content;
+    margin: 5px;
+    display:block;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #5f5959;
+    border-radius: 10px;
+    align-items: baseline;
+  } 
+  .inner_content1{
+    padding: 20px;
+    position:relative;
+    background-color: #f1f1f1;
+    justify-content: center;
+    height:430px;
+    margin: 5px;
+    display:block;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #5f5959;
+    border-radius: 10px;
+    align-items: baseline;
+    h6{
+      transform: translateY(-18px);
+    }
+  } 
+ 
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+  div.filter-tabs{ margin-left: 0;}
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.datepicker_from {
+  margin-top: 10px; 
+  text-align: center; 
+  overflow-y: scroll;
+}
+
+/*////////////////   QUANTITY  //////////////////////////*/
+
+.quantity_myChart_size{
+  display:flex;
+  box-sizing: border-box;
+  height:300px;
+  width:1000px;
+}
+
+.inner_content2{
+  padding: 20px;
+  position:relative;
+  background-color: #f1f1f1;
+  justify-content:left;
+  height:430px;
+  margin: 5px;
+  display:block;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #5f5959;
+  border-radius: 10px;
+  align-items: baseline;
+  overflow: auto;
+  h6{
+    transform: translateY(-18px);
+  }
+} 
+
+/*////////////////////////  SOURCE TABLE ////////////////////*/
+#source_table{
+  margin-left: 130px;
+  padding: 1px 16px;
+  height: 100vh;
+  border-color: black;
+  border-width: 5px;
+  background-color: rgb(255,255,255);
+  overflow: auto;
+  display: flex; 
+  justify-content:left;
+  flex-wrap: wrap;
+  justify-items: stretch;
+  overflow-x: visible;
+  display:none;
+}
+
+#inner_div_content{
+  overflow: auto;
+  height: 100vh;
+}
+
+table {
+  margin-bottom: 90vh;
+  width: 100%; 
+}

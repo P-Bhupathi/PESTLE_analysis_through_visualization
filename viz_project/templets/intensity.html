@@ -1,0 +1,81 @@
+<div class="content" id="pestle_block">
+
+        <!-- chart 1 -->
+        <div class="inner_content">
+          <div class="top_of_chart">
+            <h3>Intensity</h3>
+            <input type="range" id="dateRange1" min="2016" max="2200" step="1"  oninput="updateSelectedDateRange_intensity(this.value,'pestle_inputYear1','myChart1')">
+            <input type="text" class="datepicker_from" placeholder="End Year" id="pestle_inputYear1" onchange="updateSelectedDateYear_intensity(this.id,'dateRange1','myChart1')">
+          </div>
+          <div class="myChart_size" >
+            <canvas id="myChart1" ></canvas>
+          </div>
+        </div>
+        <!-- chart 2 -->
+        <div class="inner_content">
+          <div class="top_of_chart">
+            <h5>Likelihood of Intensity</h5>
+            <input type="range" id="dateRange2" min="2016" max="2200" step="1"  oninput="updateSelectedDateRange_bubble(this.value,'pestle_inputYear2','myChart2')">
+            <input type="text" class="datepicker_from" placeholder="End Year" id="pestle_inputYear2" onchange="updateSelectedDateYear_bubble(this.id,'dateRange2','myChart2')">
+          </div>
+          <div class="myChart_size2" >
+            <canvas id="myChart2"></canvas>
+          </div>
+        </div>
+        <!-- chart 3 -->
+        <div class="inner_content">
+          <div class="top_of_chart">
+            <h5>Relevance of Intensity</h5>
+            <input type="range" id="dateRange3" min="2016" max="2200" step="1"  oninput="updateSelectedDateRange_bubble_1(this.value,'pestle_inputYear3','myChart3')">
+            <input type="text" class="datepicker_from" placeholder="End Year" id="pestle_inputYear3" onchange="updateSelectedDateYear_bubble_1(this.id,'dateRange3','myChart3')">
+          </div>
+          <div class="myChart_size2" >
+            <canvas id="myChart3"></canvas>
+          </div>
+        </div>
+        <!-- chart 4 -->
+        <div class="inner_content1">
+          <div class="top_of_chart">
+            <h6>Intensity of PESTLE</h6>
+            <input type="range" id="dateRange4" min="2016" max="2200" step="1"  oninput="updateSelectedDateRange_pie(this.value,'pestle_inputYear4','myChart4')">
+            <input type="text" class="datepicker_from" placeholder="End Year" id="pestle_inputYear4" onchange="updateSelectedDateYear_pie(this.id,'dateRange4','myChart4')">
+          </div>
+          <div class="myChart_size3" >
+            <canvas id="myChart4" width="350px" height="350px"></canvas>
+          </div>
+        </div>
+        <!-- chart 5 -->
+        <div class="inner_content1">
+          <div class="top_of_chart">
+            <h6>Intensity of Sector</h6>
+            <input type="range" id="dateRange5" min="2016" max="2200" step="1"  oninput="updateSelectedDateRange_doughnut(this.value,'pestle_inputYear5','myChart5')">
+            <input type="text" class="datepicker_from" placeholder="End Year" id="pestle_inputYear5" onchange="updateSelectedDateYear_doughnut(this.id,'dateRange5','myChart5')">
+          </div>
+          <div class="myChart_size3" >
+            <canvas id="myChart5" width="400px" height="400px"></canvas>
+          </div>
+        </div>
+      <!-- chart 6 -->
+      <div class="inner_content">
+        <div class="top_of_chart">
+          <h6 id="h6">Intensity in Country</h6>
+          <input type="range" id="dateRange6" min="2016" max="2200" step="1"  oninput="updateSelectedDateRange_intensity_vs_country(this.value,'pestle_inputYear6','myChart6')">
+          <input type="text" class="datepicker_from" placeholder="End Year" id="pestle_inputYear6" onchange="updateSelectedDateYear_intensity_vs_country(this.id,'dateRange6','myChart6')">
+        </div>
+        <div class="myChart_size" >
+          <canvas id="myChart6" ></canvas>
+        </div>
+      </div>
+      <!-- chart 7 -->
+      <div class="inner_content">
+        <div class="top_of_chart">
+          <h6 id="h6">Intensity in Region</h6>
+          <input type="range" id="dateRange7" min="2016" max="2200" step="1"  oninput="updateSelectedDateRange_intensity_vs_region(this.value,'pestle_inputYear7','myChart7')">
+          <input type="text" class="datepicker_from" placeholder="End Year" id="pestle_inputYear7" onchange="updateSelectedDateYear_intensity_vs_region(this.id,'dateRange7','myChart7')">
+        </div>
+        <div class="myChart_size" >
+          <canvas id="myChart7" ></canvas>
+        </div>
+      </div>
+     
+</div>
